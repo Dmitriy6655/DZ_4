@@ -11,11 +11,12 @@ double power_num_A = double.Parse(Console.ReadLine());
 //создаем МЕТОД и вводим в него аргументы num_A и power_num_A
 double NumberPower (double num_A, double power_num_A )
 {
-double power = 0;
 
-for(double i = 0; i<=power_num_A; i++)
+double power = num_A;
+
+for(double i = 0; i < power_num_A-1; i++)
 {
-    power = num_A * num_A;
+        power = power * num_A;
 }
 return power;
 }
